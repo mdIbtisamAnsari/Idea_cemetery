@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import mongooseAggregatePaginate from "mongoose-aggregate-paginate-v2";
 
 const testScheme = new mongoose.Schema({
     context:{
@@ -13,3 +14,6 @@ const testScheme = new mongoose.Schema({
     ]
 },{timestamps: true}
 )
+
+
+export const Test = mongoose.model("Test", testScheme)
